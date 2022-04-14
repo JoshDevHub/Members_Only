@@ -1,0 +1,18 @@
+.header {
+  align-items: center;
+  background-color: var(--color-tertiary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  &__home-link {
+    color: var(--color-text-header);
+
+    &:hover {
+      color: inherit;
+      filter: brightness(80%);
+    }
+  }
+}
