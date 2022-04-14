@@ -1,0 +1,16 @@
+.post {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__author {
+    font-weight: bold;
+  }
+}
