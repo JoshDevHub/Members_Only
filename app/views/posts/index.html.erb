@@ -1,12 +1,23 @@
-<h1>Posts</h1>
+<div class="post-heading">
+  <h1>Posts</h1>
+  <%= link_to 'Create New Post', new_post_path, class: 'btn btn--primary' %>
+</div>
 
-<ul>
+<ul class="post-container">
   <% @posts.each do |post| %>
-    <li>
-      <strong><%= post.title %></strong>
-      <p> <%= post.body %></p>
+    <li class="post">
+      <h4 class="post__title">
+        <%= post.title %>
+      </h4>
+      <div class="post__content">
+        <p class="post__body">
+          <%= post.body %>
+        </p>
+        <br>
+        <p class="post__author">
+          Created by: <%= user_signed_in? ? post.user.username : "Top Secret" %>
+        </p>
+      </div>
     </li>
   <% end %>
 </ul>
-
-<%= link_to 'Create New Post', new_post_path %>
