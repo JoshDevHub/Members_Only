@@ -26,12 +26,15 @@
     &:focus-within,
     &:active {
       background-color: transparent;
-      border-color: var(--color-text-header)
+      border-color: var(--color-text-header);
+      color: var(--color-primary);
+      filter: brightness(120%);
     }
   }
 
   &--secondary {
     color: var(--color-text-header);
+    border-color: var(--color-text-header);
 
     &:hover,
     &:focus,
