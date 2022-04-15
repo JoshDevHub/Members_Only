@@ -1,16 +1,29 @@
 .post {
-  border: var(--border);
-  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-xs);
+
+  &__content {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--space-m);
+    position: relative;
+  }
 
   &__title {
-    margin-bottom: 0.5rem;
+    margin-left: var(--space-m);
+    margin-bottom: var(--space-xs);
+  }
+
+  &__body {
+    margin-right: 3rem;
   }
 
   &__author {
     font-weight: bold;
+    position: absolute;
+    bottom: var(--space-xs);
+    right: var(--space-xs);
   }
 }
