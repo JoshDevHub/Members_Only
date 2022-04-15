@@ -4,8 +4,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: var(--space-m);
+  padding: var(--space-m);
+  width: 100%;
+  @include media(tabletAndUp) {
+    padding: var(--space-m) var(--space-xxxxl);
+  }
 
   &__home-link {
     color: var(--color-text-header);

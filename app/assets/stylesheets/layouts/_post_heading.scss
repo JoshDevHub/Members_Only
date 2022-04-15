@@ -1,5 +1,10 @@
 .post-heading {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
+  padding: var(--space-l);
+  width: 100%;
+  @include media(tabletAndUp) {
+    max-width: 35rem;
+  };
 }
