@@ -1,14 +1,14 @@
 <h1 class="form-header">New Post</h1>
 
-<%= form_with model: @post, html: { class: "post-form" } do |form| %>
-  <div class="post-form__controls">
-    <%= form.label :title, class: "post-form__label" %>
-    <%= form.text_field :title, class: "post-form__text" %>
+<%= form_with model: @post, html: { class: "form" } do |form| %>
+  <div class="form__controls">
+    <%= form.label :title, class: "form__label" %>
+    <%= form.text_field :title, class: "form__text" %>
   </div>
 
-  <div class="post-form__controls">
-    <%= form.label :body, class: "post-form__label" %>
-    <%= form.text_area :body, class: "post-form__textarea" %><br>
+  <div class="form__controls">
+    <%= form.label :body, class: "form__label" %>
+    <%= form.text_area :body, class: "form__textarea" %><br>
   </div>
 
   <div>
