@@ -19,7 +19,7 @@
     margin-bottom: var(--space-s);
   }
 
-  & input {
+  & input, textarea {
     padding: var(--space-xs);
 
     &:focus {
