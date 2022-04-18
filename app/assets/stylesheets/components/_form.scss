@@ -32,6 +32,11 @@
     height: 200px;
   }
 
+  &__username {
+    width: max(50%, 15rem);
+    margin: 0 auto;
+  }
+
   &__email {
     width: max(50%, 15rem);
     margin: 0 auto;
