@@ -1,7 +1,8 @@
 .post-container {
   margin: 0 auto;
   padding: var(--space-m);
-  @include media(tabletAndUp) {
-    max-width: 35rem;
-  };
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(240px,30vw), 1fr));
+  column-gap: var(--space-xl);
+  width: 100%;
 }

@@ -1,8 +1,14 @@
 .post {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   margin-bottom: var(--space-xl);
   padding: var(--space-xs);
+  width: 100%;
+
+  @include media(tabletAndUp) {
+    max-width: 35rem;
+  }
 
   &__content {
     border: var(--border);
