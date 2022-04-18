@@ -1,14 +1,25 @@
 <h2 class="form-header">Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "form" }) do |f| %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name),
+  html: { class: "form" }) do |f| %>
   <div class="form__controls">
     <%= f.label :email, class: "form__label" %>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form__email" %>
+    <%=
+      f.email_field :email,
+      autofocus: true,
+      autocomplete: "email",
+      class: "form__email"
+    %>
+
   </div>
 
   <div class="form__controls">
     <%= f.label :password, class: "form__label" %>
-    <%= f.password_field :password, autocomplete: "current-password", class: "form__password" %>
+    <%=
+      f.password_field :password,
+      autocomplete: "current-password",
+      class: "form__password"
+    %>
   </div>
 
   <div class="form__actions">
