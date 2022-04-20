@@ -23,33 +23,26 @@
       <h2><%= link_to "Members Only", root_path, class: "header__home-link" %></h2>
       <nav class="login-controls">
         <% if user_signed_in? %>
-          <p>
-            <%= link_to current_user.username,
-                edit_user_registration_path,
-                class: 'btn btn--secondary'
-            %>
-          </p>
-          <p>
-            <%= button_to 'Logout',
-                destroy_user_session_path,
-                method: :delete,
-                class: 'btn btn--secondary'
-            %>
-          </p>
-        <% else %>
-          <p>
-            <%=
-              link_to 'Sign In',
-              new_user_session_path,
+          <%= link_to current_user.username,
+              edit_user_registration_path,
               class: 'btn btn--secondary'
-            %>
-          </p>
-          <p>
-            <%= link_to 'Sign Up',
+          %>
+          <%= button_to 'Logout',
+              destroy_user_session_path,
+              method: :delete,
+              class: 'btn btn--secondary'
+          %>
+        <% else %>
+          <%=
+            link_to 'Sign In',
+            new_user_session_path,
+            class: 'btn btn--secondary'
+          %>
+          <%=
+            link_to 'Sign Up',
             new_user_registration_path,
             class: 'btn btn--secondary'
-            %>
-          </p>
+          %>
         <% end %>
       </nav>
     </header>
