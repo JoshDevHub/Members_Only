@@ -19,6 +19,11 @@
     margin-bottom: var(--space-s);
   }
 
+  &__note {
+    margin: var(--space-xs) auto 0 auto;
+    font-style: italic;
+  }
+
   & input, textarea {
     padding: var(--space-xs);
 
